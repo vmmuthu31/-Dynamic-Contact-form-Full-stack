@@ -4,38 +4,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SignUp Form - MongoDB</title>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+    <title>Contact-Form</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-
-            </div>
-            <div class="col-md-6 main">
-                <form action="/sign_up" method="POST">
-                    <h2>SignUp Form</h2>
-                    <input type="text" class="box" id="name" name="name" placeholder="Name" required />
-                    <br>
-                    <input type="text" class="box" id="email" name="email" placeholder="Email" required />
-                    <br>
-                    <input type="text" class="box" id="phno" name="phno" placeholder="Mobile" required />
-                    <br>
-                    <input type="text" class="box" id="password" name="password" placeholder="Password" required />
-                    <br>
-                    <input type="submit" value="Submit" id="submit" />
-                </form>
-            </div>
-            <div class="col-md-3">
-            </div>
+    <div id="left" class="card row">
+        <div id="left-content" >
+          <h2 class="ltext">Get Everything You need For Creating WordPress Websites.</h2>
+          <img src="./illustration.png" class="card-img-top">
+          <p class="ltext2">All-in-one Multifunctional Subscribe Service Perfect for Launching All Kinds of WordPress Projects!</p>
         </div>
     </div>
+    <div class="card row" id="right" >  
+      <div class="card-body" style="margin:5px;">
+          <form method="post" action="/submit" >
+              <h2 class="rtext mb-4">SUBSCRIBE AND GET YOUR BONUS!</h2>
+              <div class="d-flex flex-row align-items-center ">   
+                  <div class="form-outline flex-fill">
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      placeholder="Email address"
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+                <div class="d-flex flex-row align-items-center ">
+                  <div class="form-outline flex-fill mb-0">
+                    <input
+                      id="firstname"
+                      name="firstname"
+                      type="first-name"
+                      placeholder="First Name"
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+                <div class="d-flex flex-row align-items-center ">
+                  <div class="form-outline flex-fill mb-0">
+                    <input
+                      id="lastname"
+                      name="lastname"  
+                      type="last-name"
+                      placeholder="Last Name"
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+                <div class="d-flex flex-row align-items-center ">
+                  <div class="form-outline flex-fill mb-0">
+                    <input
+                      id="address"
+                      name="address"
+                      type="address"
+                      placeholder="Address"
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center mx-1 mb-2 mb-lg-2">
+                  <button id="btn" type="submit" class="btn flex-fill">
+                    STAY UPDATED
+                  </button>
+                </div>
+                <div class=" d-flex  mb-5">
+                  <i class='fa fa-lock' style='color:#c0beaf; font-size: 20px;'></i>
+                   <label id="rtext2" class="form-check-label " >
+                         Your Information will never be
+                      shared with any third party
+                    </label>
+                  </div>
+              </form>
+        </div>
+      </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
 </body>
 
